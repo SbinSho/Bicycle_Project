@@ -17,7 +17,7 @@
   
   <servlet-mapping>
   	<servlet-name>load</servlet-name>
-  	<url-pattern>*.lo</url-pattern>
+  	<url-pattern>*.ld</url-pattern>
   </servlet-mapping>
   
   
