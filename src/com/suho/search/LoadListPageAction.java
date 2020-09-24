@@ -16,7 +16,7 @@ import org.json.simple.parser.ParseException;
 
 
 
-public class LoadListAction{
+public class LoadListPageAction{
 	
 	public void getLoad( HttpServletRequest request, HttpServletResponse response) throws Exception{
 		

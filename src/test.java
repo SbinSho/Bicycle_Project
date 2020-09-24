@@ -18,7 +18,7 @@ public class test {
 //        urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "=" + URLEncoder.encode("tXyrwVeSLRn84CXxp6YRwCyYN1W3r%2FZWSOxncCCvENtvDAsBb%2Fi5amus91w%2Bp%2FYesxx9xraXWHJTIW5HN4jrzg%3D%3D", "UTF-8")); /*공공데이터포털에서 발급받은 인증키*/
         urlBuilder.append("&" + URLEncoder.encode("pageNo","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); /*페이지번호*/
         urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); /*한 페이지 결과 수*/
-        urlBuilder.append("&" + URLEncoder.encode("gugunNm","UTF-8") + "=" + URLEncoder.encode("부산광역시 동구", "UTF-8")); /*구군명*/
+        urlBuilder.append("&" + URLEncoder.encode("gugunNm","UTF-8") + "=" + URLEncoder.encode("부산광역시 해운대구", "UTF-8")); /*구군명*/
         urlBuilder.append("&" + URLEncoder.encode("resultType","UTF-8") + "=" + URLEncoder.encode("json", "UTF-8")); /*JSON방식으로 호출 시 파라미터 resultType=json 입력*/
         URL url = new URL(urlBuilder.toString());
         
@@ -46,7 +46,7 @@ public class test {
         try {
         	
         	jsonObj = (JSONObject)parser.parse(sb.toString()); // String 데이터 파싱 후 JSONObject로 캐스팅
-			
+			System.out.println(jsonObj);
 		} catch (ParseException e) {
 			System.out.println("파싱 오류 : " + e);
 		}
@@ -56,7 +56,14 @@ public class test {
         JSONObject getJson = (JSONObject)jsonObj.get("getBicycleRoadInfo"); // 오브젝트 안의 json 객체를 사용하기 위해 새로운 객체 선언
         JSONArray items = (JSONArray) getJson.get("item"); // API 응답값으로 받은 자전거 도로 정보를 조회하기 위한 JSONArray 선언
         
+        String pageNo = getJson.get("pageNo").toString();
+        String totalCount = getJson.get("totalCount").toString();
+        String numOfRows = getJson.get("numOfRows").toString();
         
+        
+        System.out.println("pageNo : " + pageNo);
+        System.out.println("totalCount : " + totalCount);
+        System.out.println("numOfRows : " + numOfRows);
         
         for (Object arr : items) {
 			
