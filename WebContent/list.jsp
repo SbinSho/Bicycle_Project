@@ -10,9 +10,34 @@
 
 <script src="js/LoadList.js?ver=1"></script>
 
+<style type="text/css">
+	#pageNum {
+		width: 100%;
+		text-align: center;
+		margin-top: 2em;
+	}
+	#LoadList {
+		width: 100%;
+		margin-top: 2em;
+	}
+	table{
+		width: 800px;
+		border: 1px solid black;
+		margin: auto;
+	}
+	#body {
+		width: 100%;
+		margin: auto;
+		text-align: center;
+	}
+	#body tr{
+		border-bottom: 1px solid black;	
+	}
+</style>
+
 </head>
 <body>
-
+<div id="body">
 	<h2>부산광역시 구별 자전거 도로 검색</h2>
 	<label for="load">Choose a load:</label>
 
@@ -34,10 +59,11 @@
 	</select>
 	<input type="button" value="검색" id="serach" onclick="LoadList(1);">
 	
-	<div id ="info"></div>
+<!-- 	<div id ="info"></div> -->
 	<div id="LoadList"></div>
 	<div id="pageNum"></div>
 
+</div>
 
 </body>
 </html>
