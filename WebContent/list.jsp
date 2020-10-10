@@ -22,7 +22,19 @@
 	}
 	table{
 		width: 800px;
-		border: 1px solid black;
+		margin: auto;
+		border-collapse: collapse;
+	}
+	td {
+		border-bottom: 1px solid black;
+	}
+	tr:nth-child(even){
+		background: ghostwhite;		
+	}
+	#info {
+		width: 800px;
+		text-align: right;
+		margin-top : 2em;
 		margin: auto;
 	}
 	#body {
@@ -30,16 +42,22 @@
 		margin: auto;
 		text-align: center;
 	}
-	#body tr{
-		border-bottom: 1px solid black;	
+	#pageNum>a {
+		text-decoration: none;
+		color : black;
+		font-size : 16px;
 	}
+	#pageNum>a:HOVER {
+		color : red;
+	}
+	
 </style>
 
 </head>
 <body>
 <div id="body">
 	<h2>부산광역시 구별 자전거 도로 검색</h2>
-	<label for="load">Choose a load:</label>
+	<label for="load">구 선택:</label>
 
 	<select name="load" id="load">
 	  <option value="부산광역시 강서구">강서구</option>
@@ -59,7 +77,7 @@
 	</select>
 	<input type="button" value="검색" id="serach" onclick="LoadList(1);">
 	
-<!-- 	<div id ="info"></div> -->
+	<div id ="info"></div>
 	<div id="LoadList"></div>
 	<div id="pageNum"></div>
 

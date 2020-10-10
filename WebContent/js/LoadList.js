@@ -13,11 +13,11 @@
 			data: { gugunNm : gugunNm, pageNo : pageNo},
 			success: function(data){
 				if(data == 0){
-					gugunNmHtml = "<h4>정보가 존재하지 않습니다.</h4>"
-					$("#tt").empty();
+					LoadListHTML = "<h4>정보가 존재하지 않습니다.</h4>"
+//					$("#tt").empty();
 				}
 				else{
-//					$("#info").html("pageNo :" + data.pageNo + " totalCount : " + data.totalCount);
+					$("#info").html("현재 페이지 번호 : " + data.pageNo + " 총 검색결과 : " + data.totalCount);
 					LoadListHTML += "<table>";
 					LoadListHTML +="<tr>";
 					LoadListHTML += "<th>시작지점</th>";
