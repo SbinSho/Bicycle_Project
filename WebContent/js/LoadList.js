@@ -1,7 +1,3 @@
-/**
- * 
- */
-
 	function LoadList(page) {
 		var gugunNm = $("#load option:selected").val(); // 현재 선택된 구명
 		var pageNo = page;    // 리스트 페이지 번호
@@ -31,20 +27,6 @@
 						LoadListHTML += "<td>"+ data.item[i].checkDate+"</td>";
 						LoadListHTML += "</tr>";
 						LoadListHTML = LoadListHTML.replace(/- km/gi, "정보가 존재 하지 않습니다."); // 정규식 표현으로 - km를 정보가 존재하지 않습니다로 변경.
-//						LoadListHTML += "<div class='result'>";
-//						LoadListHTML +="<h4>"+(i+1)+"번째 결과</h4>";
-//						LoadListHTML += "<ul>";
-//						LoadListHTML += "<li>구군명: "+ data.item[i].gugunNm+"</li>";
-//						LoadListHTML += "<li>시작지점: "+ data.item[i].startSpot+"</li>";
-//						LoadListHTML += "<li>종료지점: "+ data.item[i].endSpot+"</li>";
-//						LoadListHTML += "<li>구간길이: "+ data.item[i].total+" km</li>";
-//						LoadListHTML += "<li>자전거전용 길이: "+ data.item[i].gugunOnlyBike+" km</li>";
-//						LoadListHTML += "<li>자전거보행자 겸용 길이 : "+ data.item[i].gugunWithWalk+" km</li>";
-//						LoadListHTML += "<li>자전거우선도로 길이: "+ data.item[i].gugunBikeRoad+" km</li>";
-//						LoadListHTML += "<li>갱신일 : "+ data.item[i].checkDate+"</li>";
-//						LoadListHTML += "</ul>";
-//						LoadListHTML += "</div>";
-//						LoadListHTML = LoadListHTML.replace(/- km/gi, "정보가 존재 하지 않습니다."); // 정규식 표현으로 - km를 정보가 존재하지 않습니다로 변경.
 					}
 					LoadListHTML += "</table>";
 					for(var i = 1; i <= Math.ceil(data.totalCount/10); i++){

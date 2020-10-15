@@ -2,14 +2,14 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/gugunNmHtml; charset=UTF-8">
-<title>Insert title here</title>
-
-<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<script src="js/LoadList.js?ver=1"></script>
-
+	<head>
+		<meta http-equiv="Content-Type" content="text/gugunNmHtml; charset=UTF-8">
+		<title>부산시 자전거 도로 검색</title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.js"></script>
+		<script src="js/LoadList.js?ver=1"></script>
+	</head>
 <style type="text/css">
 	#pageNum {
 		width: 100%;
@@ -53,7 +53,7 @@
 	
 </style>
 
-</head>
+
 <body>
 <div id="body">
 	<h2>부산광역시 구별 자전거 도로 검색</h2>
@@ -75,7 +75,7 @@
 	  <option value="부산광역시 중구">중구</option>
 	  <option value="부산광역시 해운대구">해운대구</option>
 	</select>
-	<input type="button" value="검색" id="serach" onclick="LoadList(1);">
+	<button type="button" class="btn" onclick="LoadList(1);">검색하기</button>
 	
 	<div id ="info"></div>
 	<div id="LoadList"></div>
