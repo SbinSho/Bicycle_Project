@@ -2,11 +2,19 @@
 ##### REST API 공부 목적으로, 공공 데이터의 부산 자전거 도로 정보 오픈 API를 사용하여 만든 프로젝트 입니다. 
 
 ## Project nfo :punch:
-1. 실행 환경
-    * window10
+1. 개발 환경
+   * LANGUAGE
+      - HTML5 + CSS3
+      - javascript
+      - jQuery, Ajax
+   * OS & TOOLS 
+      - windows 10
+      - Eclipse
+2. 실행 환경
+    * windows 10
     * java8
     * eclipse-mars
-2. 핵심 기능
+3. 핵심 기능
     * REST API를 이용하여 부산시의 구별 자전거 도로 검색기능.
 ![use_screenshot](https://github.com/SbinSho/Bicycle_Project/blob/master/img/use.PNG)
 
