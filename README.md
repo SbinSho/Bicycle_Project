@@ -3,13 +3,19 @@
 
 ## Project nfo :punch:
 1. 개발 환경
-   * LANGUAGE
+   * language
       - HTML5 + CSS3
       - javascript
-      - jQuery, Ajax
-   * OS & TOOLS 
+      - java
+   * library
+      - jQuery
+      - Ajax
+   * framework
+      - bootstrap
+   * os & tools
       - windows 10
-      - Eclipse
+      - Eclipse-mars
+      - Apache Tomcat 8.0
 2. 실행 환경
     * windows 10
     * java8
