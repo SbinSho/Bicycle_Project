@@ -67,7 +67,6 @@ public class LoadListAction{
      			
      		}
         	 JSONObject getJson = (JSONObject)jsonObj.get("getBicycleRoadInfo"); // 오브젝트 안의 json 객체를 사용하기 위해 새로운 객체 선언
-//             JSONArray items = (JSONArray) getJson.get("item"); // API 응답값으로 받은 자전거 도로 정보를 조회하기 위한 JSONArray 선언
      		 
              response.setContentType("application/x-json; charset=UTF-8");
              response.getWriter().print(getJson);
