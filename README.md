@@ -8,7 +8,7 @@
     * eclipse-mars
 2. 핵심 기능
     * REST API를 이용하여 부산시의 구별 자전거 도로 검색기능.
-    * ![screenshot](./img/use.png)
+    * ![use_screenshot](./img/use.png)
 
 ## Browsers support
 
