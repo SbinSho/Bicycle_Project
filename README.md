@@ -1,7 +1,7 @@
 ## Bicycle :wave:
 ##### REST API 공부 목적으로, 공공 데이터의 부산 자전거 도로 정보 오픈 API를 사용하여 만든 프로젝트 입니다. 
 
-## Project Info :punch:
+## Project nfo :punch:
 1. 실행 환경
     * window10
     * java8
