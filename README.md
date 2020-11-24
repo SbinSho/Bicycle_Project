@@ -16,10 +16,12 @@
       - windows 10
       - Eclipse-mars
       - Apache Tomcat 8.0
+      
 2. 실행 환경
     * windows 10
     * java8
     * eclipse-mars
+    
 3. 핵심 기능
     * REST API를 이용하여 부산시의 구별 자전거 도로 검색기능.
 ![use_screenshot](https://github.com/SbinSho/Bicycle_Project/blob/master/img/use.PNG)
